@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "bounded frame selection",
+    "original timestamps retained",
+    "v7.3 saved output reloads",
+    "localizations unchanged",
+    "existing output protected",
+    "geometry required"
+  ]
+}

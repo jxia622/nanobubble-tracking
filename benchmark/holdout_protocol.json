@@ -1,0 +1,70 @@
+{
+  "description": "Tracking only, identical localization lists for every method",
+  "candidate_sha256": "52499aa42bab2ff522b89ec47b4393c4e99e3ee9baffe1c498fbb360c3ff90dd",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "seed_base": 202609060,
+  "frames": 192,
+  "fps": 2000,
+  "pixel_size_um": [
+    12.32,
+    12.41446725317693
+  ],
+  "min_detections_all_methods": 16,
+  "legacy_max_link_distance_pixels": 8,
+  "methods": [
+    "legacy_default",
+    "legacy_gap6",
+    "nb_position_only",
+    "nb_no_evidence",
+    "nb"
+  ],
+  "primary_conditions": [
+    "intermittent20",
+    "intermittent40",
+    "burst_dropout",
+    "crowded_dropout",
+    "curved_pulsatile",
+    "false_detections",
+    "births_deaths",
+    "close_crossings",
+    "slow_stationary",
+    "high_jitter"
+  ],
+  "control_conditions": [
+    "continuous_sparse",
+    "null_random"
+  ],
+  "stress_conditions": [
+    "short_trajectories",
+    "persistent_false"
+  ],
+  "primary_metric": "detection-conditioned IDF1; global one-to-one identity mapping",
+  "secondary_metrics": [
+    "full IDF1",
+    "link precision",
+    "identity switches",
+    "80% recovery",
+    "false retained points",
+    "runtime"
+  ],
+  "success_criteria": [
+    "Paired 95% bootstrap CI for mean primary association-IDF1 gain over legacy_default is entirely above zero",
+    "Paired 95% bootstrap CI for mean primary association-IDF1 gain over legacy_gap6 is entirely above zero",
+    "Continuous sparse mean association-IDF1 is not more than 3 percentage points below legacy_default",
+    "Mean false retained observations in null_random does not exceed legacy_default by more than 1 per 192-frame sequence",
+    "All invariants and MATLAB integration tests pass; fixed localizations remain unchanged"
+  ],
+  "limitations": "NB dropout and motion stress tests, not calibrated acoustic or in-vivo validation",
+  "development": "Three existing seeds per condition; no holdout scores used to choose this frozen candidate"
+}

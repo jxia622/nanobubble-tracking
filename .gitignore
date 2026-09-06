@@ -1,0 +1,25 @@
+# MATLAB and macOS-generated files
+*.asv
+*.m~
+._*
+.DS_Store
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Benchmark data and generated MATLAB outputs
+benchmark/holdout_inputs/
+benchmark/holdout_results/
+benchmark/development/
+benchmark/*.log
+benchmark/*_test_results.json
+tests/*_test_results.json
+*.log
+results/*.mat
+
+# Local, machine-specific files
+.env
+*.local

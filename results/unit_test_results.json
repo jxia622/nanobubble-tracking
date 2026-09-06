@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "empty frames and singleton",
+    "five-frame gap contains no synthetic observations",
+    "six missing frames expire identity",
+    "zero-gap boundary",
+    "elapsed-time expiry for irregular acquisition",
+    "crossing identity, exclusive assignments, immutable input and translation invariance",
+    "physical velocity, anisotropic pixels, irregular timestamps and smoother accuracy",
+    "invalid coordinates, geometry and timestamps rejected"
+  ],
+  "matlab": "25.1.0.2973910 (R2025a) Update 1"
+}

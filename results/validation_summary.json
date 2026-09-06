@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "candidate_sha256": "52499aa42bab2ff522b89ec47b4393c4e99e3ee9baffe1c498fbb360c3ff90dd",
+  "original_sources_unchanged": "The legacy files were hashed in the source workspace before this repository was assembled; the included munkres.m is retained with its original header.",
+  "holdout_outputs_audited": 700,
+  "workflow_tests": true,
+  "scoring_tests": true,
+  "source_localizations_unchanged": true,
+  "all_prespecified_checks": {
+    "positive_gain_vs_original": true,
+    "positive_gain_vs_longer_gap": true,
+    "continuous_control": true,
+    "null_control": true,
+    "behavioral_tests": true,
+    "assignment_and_immutable_coordinate_audits": true
+  }
+}

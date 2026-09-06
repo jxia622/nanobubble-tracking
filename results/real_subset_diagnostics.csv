@@ -1,0 +1,4 @@
+method,frames,input_points,retained_tracks,retained_observations,median_observations_per_track,seconds
+legacy_default,128,29691,262,5637,20.0,1.4709222916666667
+legacy_gap6,128,29691,579,14745,22.0,1.344376375
+nb,128,29691,277,6165,20.0,1.968471125

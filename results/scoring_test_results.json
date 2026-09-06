@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "perfect identities",
+    "fragmentation penalty",
+    "conditioning on fixed detections",
+    "false retention penalty",
+    "duplicate detection rejected",
+    "empty-scene undefined accuracy"
+  ]
+}
